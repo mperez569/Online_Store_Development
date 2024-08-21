@@ -1,5 +1,5 @@
 # Online_Store_Development
-A personal project developed by myself to increase proficiency in cloud technologies (AWS Ec2, Rds, and SG), web development (CSS, html, UI), server side scripting (PHP), and database management (SQL). 
+This project was started at the end of the school year and was developed to increase proficiency in cloud technologies (AWS Ec2, Rds, and SG), web development (CSS, html, UI), server side scripting (PHP), and database management (SQL). 
 
 In this personal project, I wanted to learn how I can get these different technologies to work together using an MVC approach. 
   1. PHP as the back end
