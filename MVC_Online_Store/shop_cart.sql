@@ -24,6 +24,19 @@ CREATE TABLE IF NOT EXISTS `products` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='products that can be added to cart' AUTO_INCREMENT=41 ;
 
+CREATE TABLE IF NOT EXISTS `products` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  `description` mediumtext,
+  `price` decimal(10,2) NOT NULL,
+  `created` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `modified` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  KEY `idx_name` (`name`),
+  KEY `idx_price` (`price`),
+  KEY `idx_created` (`created`),
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='products that can be added to cart';
+
 --
 -- Dumping data for table `products`
 --
