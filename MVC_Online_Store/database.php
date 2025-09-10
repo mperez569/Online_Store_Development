@@ -6,8 +6,8 @@ class DB {
   function __construct(){
     try {
       $this->pdo = new PDO(
-        "mysql:host=cis282.cnac62k4c1l7.us-east-1.rds.amazonaws.com;dbname=shop_cart;charset=utf8",
-        "mperez", "MartinPerez"
+        "mysql:host=Pdo-db.ci94squqoknb.us-east-1.rds.amazonaws.com;dbname=shop_cart;charset=utf8",
+        "mperez569", "Cps50164404"
       );
     } catch (Exception $ex) { die($ex->getMessage()); }
   }

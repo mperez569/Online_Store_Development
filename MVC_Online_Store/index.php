@@ -80,7 +80,7 @@ else if($action == 'empty_cart')
 else if ($action == 'checkout')
 {
     $results = $products->get_cart($session_id);
-    $newInvID = $products->get_MaxInvID() + 1;
+    $newInvID = $products->get_maxInvID() + 1;
     $products -> insert_invoice($newInvID, null, null, null, null);
     foreach($results as $r)
     {

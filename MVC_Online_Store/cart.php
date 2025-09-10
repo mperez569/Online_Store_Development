@@ -6,7 +6,7 @@
     <a href = "index.php">Products</a>
     <a href = "index.php?action=empty_cart">Empty Cart</a>
 <?php
-    if($resutls[0] != null)
+    if($results[0] != null)
     {
         echo "<a href = 'index.php?action=checkout'>Checkout</a>";
     }

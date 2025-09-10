@@ -61,13 +61,13 @@ class Products extends DB {
   }
 
   function get_maxInvID() {
-	$maxInvID=0;
-	$result=$this->select("SELECT MAX(inv_id) AS maxInvID FROM invoice WHERE inv_date <> 0");
-	foreach($result as $r)
-	{
-	  $maxInvID=$r['maxInvID'];
-	}
-	return $maxInvID;
+    $maxInvID=0;
+    $result=$this->select("SELECT MAX(inv_id) AS maxInvID FROM invoice WHERE inv_date <> 0");
+    foreach($result as $r)
+    {
+      $maxInvID=$r['maxInvID'];
+    }
+    return $maxInvID;
   }
 
   function insert_lineitem($line_no, $invid, $id, $price, $qty) {
